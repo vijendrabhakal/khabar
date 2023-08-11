@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class NewsItem extends Component {
   render() {
-    const { title, description, imageUrl, url, author, date } = this.props;
+    const { title, description, imageUrl, url, source, date } = this.props;
 
     return (
       <div className="my-3" style={{ width: "24rem" }}>
@@ -18,14 +18,16 @@ class NewsItem extends Component {
             justifyContent: "space-between",
           }}
         >
-          <span
-            className="badge rounded-pill text-bg-danger"
+          <div
+            className="d-flex"
             style={{
-              margin: "-15px -30px 5px 200px",
+              justifyContent: "flex-end",
+              position: "absolute",
+              right: "0",
             }}
           >
-            By {!author ? "Unknown" : author}
-          </span>
+            <span className="badge rounded-pill bg-danger">{source}</span>
+          </div>
           <img
             style={{
               maxWidth: "23rem",

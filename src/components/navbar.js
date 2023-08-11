@@ -19,8 +19,10 @@ class Navbar extends Component {
     const { darkMode } = this.state;
     if (darkMode) {
       document.body.style.backgroundColor = "#000000";
+      document.getElementById("header_headlines").style.color = "#ffffff";
     } else {
       document.body.style.backgroundColor = "#ffffff";
+      document.getElementById("header_headlines").style.color = "#000000";
     }
   }
   render() {
