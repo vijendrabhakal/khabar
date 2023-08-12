@@ -57,7 +57,7 @@ export class news extends Component {
     return (
       <>
         <div id="header_headlines" className="headlines">
-          <h1 className="text-center" style={{ margin: "35px 0px" }}>
+          <h1 className="text-center" style={{ margin: "100px 0px" }}>
             Top {this.CapitalizeFirstLetter(this.props.category)} Headlines
           </h1>
         </div>
