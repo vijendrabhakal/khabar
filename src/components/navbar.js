@@ -28,7 +28,7 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark custom-navbar-bg">
+        <nav className="navbar navbar-expand-lg fixed-top navbar-dark custom-navbar-bg">
           <div className="container-fluid">
             <Link className="nav-link text-white" to="/">
               <h1 style={{ marginRight: "200px" }}>KHABAR</h1>
